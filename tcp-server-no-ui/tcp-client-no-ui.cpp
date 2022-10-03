@@ -17,8 +17,8 @@
 
 using namespace std;
 
-#define SERV_IP         "121.37.187.125"
-#define SERV_PORT       "22"                // 没有也可以
+// #define SERV_IP         "121.37.187.125"
+// #define SERV_PORT       23777             // 没有也可以
 
 #define SIZE            1024
 
@@ -67,7 +67,7 @@ int main(int argc, char **argv)
     char buf[SIZE] = {0};
 
     char ip_test_client[50] = "121.37.187.125";
-    short port_test_client  = 22;
+    int port_test_client  = SERV_PORT;
 
     int connectFd = tcp_client_init(ip_test_client, port_test_client);
     printf("the connectFd is %d\n", connectFd);
