@@ -63,7 +63,9 @@ int tcp_client_communication(int connectFd, char buf[])
 int main(int argc, char **argv)
 {
 
-    cout << "\n-------\nhi kkive, the client is working now\n-------\n" << endl;
+    cout << "\n-----------------------------\nhi kkive, the client is working now\n-----------------------------\n" << endl;
+    cout << "\tserver ip & port is \n\t"<< SERV_IP << "\t" << SERV_PORT << "\n" << endl;
+    cout << "-----------------------------" << endl;
     char buf[SIZE] = {0};
 
     char ip_test_client[50] = "121.37.187.125";
